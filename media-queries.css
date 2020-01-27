@@ -68,6 +68,9 @@ img {
 
     body {
         font-family: 'Arial', sans-serif;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 0.25fr 2.5fr 2fr .5fr;
         padding: 10px;
         text-align: center;
     }
@@ -77,14 +80,19 @@ img {
         margin-top: 0px;
     }
 
+    body nav {
+        grid-area: 1 / 2 / 1 / 3;
+    }
+
     .hidden-on-desktop {
         display: none;
     }
 
     body h1 {
         font-size: 2.5em;
-        float: left;
+        grid-area: 1 / 1 / 2 / 2;
         margin-top: 0;
+        text-align: left;
     }
 
     body ul {
@@ -99,8 +107,20 @@ img {
     img {
         width: 890px;
         height: auto;
+        grid-area: 2 / 1 / 3 / 3;
     }
     .main {
+        grid-area:  3 / 1 / 4 / 2;
+        text-align: left;
+    }
+
+    .sub-section {
+        grid-area:  3 / 2 / 4 / 3;
+        text-align: left;
+    }
+
+    footer {
+        grid-area: 4 / 1 / 5 / 2;
     }
 }
 

@@ -56,6 +56,10 @@ h1 {
 footer {
     margin-right: auto;
 }
+img {
+    width: 339px;
+    height: auto;
+}
 }
 
 /* DESKTOP VIEW */
@@ -64,10 +68,13 @@ footer {
 
     body {
         font-family: 'Arial', sans-serif;
+        padding: 10px;
+        text-align: center;
     }
 
     .nav-links {
         list-style: none;
+        margin-top: 0px;
     }
 
     .hidden-on-desktop {
@@ -76,6 +83,8 @@ footer {
 
     body h1 {
         font-size: 2.5em;
+        float: left;
+        margin-top: 0;
     }
 
     body ul {
@@ -86,6 +95,12 @@ footer {
     body li {
         display: inline-block;
         padding: 1em;
+    }
+    img {
+        width: 890px;
+        height: auto;
+    }
+    .main {
     }
 }
 

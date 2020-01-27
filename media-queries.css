@@ -54,7 +54,9 @@ h1 {
     font-style: italic;
 }
 footer {
-    margin-right: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .header-img {
@@ -64,6 +66,12 @@ footer {
 img {
     width: 339px;
     height: 224px;
+}
+
+#social-media-links a {
+    color: darkgray;
+    font-size: 2em;
+    margin-left: auto;
 }
 }
 
@@ -135,12 +143,19 @@ img {
     }
 
     footer {
-        grid-area: 4 / 1 / 5 / 2;
+        grid-area: 4 / 1 / 5 / 3;
         text-align: left;
+        display: flex;
+        justify-content: space-between;
     }
 
     img {
         width: 890px;
         height: 385px;
+    }
+
+    #social-media-links a {
+        color: darkgray;
+        font-size: 2em;
     }
 }
